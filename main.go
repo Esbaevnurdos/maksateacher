@@ -51,7 +51,7 @@ var (
 
 func connectDB() {
 	var err error
-	clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
+	clientOptions := options.Client().ApplyURI("mongodb+srv://amadiar654:Lnb0PBPuGbYFApXm@cluster0.6gzdz.mongodb.net/")
 	databaseClient, err = mongo.Connect(context.Background(), clientOptions)
 	if err != nil {
 		log.Fatalf("Failed to connect to MongoDB: %v", err)
